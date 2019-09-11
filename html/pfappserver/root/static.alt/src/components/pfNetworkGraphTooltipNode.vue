@@ -9,7 +9,7 @@
             <b-col cols="12" md="auto" class="w-100">
               <icon name="circle-notch" scale="2" spin v-if="isLoading"></icon>
               <b-media v-else>
-                <icon name="exclamation-triangle" scale="2" slot="aside"></icon>
+                <template v-slot:aside><icon name="exclamation-triangle" scale="2"></icon></template>
                 <strong v-t="'Node'"></strong>
                 <p class="text-nowrap" v-t="'Not found'"></p>
               </b-media>

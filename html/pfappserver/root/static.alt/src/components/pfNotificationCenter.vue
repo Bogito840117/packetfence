@@ -2,7 +2,7 @@
   <b-navbar-nav class="notifications">
     <b-nav-item-dropdown v-if="isAuthenticated" :extra-menu-classes="visible ? 'd-flex flex-column' : ''" right no-caret
       @click.native.stop.prevent @show="show()" @hidden="markAsRead()" :disabled="isEmpty">
-      <template slot="button-content">
+      <template v-slot:button-content>
         <icon-counter name="bell" v-model="count" :variant="variant"></icon-counter>
       </template>
       <!-- menu items -->

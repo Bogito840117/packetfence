@@ -223,7 +223,7 @@
       <b-row class="justify-content-md-center text-secondary">
         <b-col cols="12" md="auto">
           <b-media>
-            <icon name="search" scale="2" slot="aside"></icon>
+            <icon name="search" scale="2" v-slot:aside></icon>
             <h4 v-t="'No Network Data'"></h4>
             <p class="font-weight-light" v-t="'Please refine your search.'"></p>
           </b-media>
@@ -236,7 +236,7 @@
       <b-row class="justify-content-md-center text-secondary">
         <b-col cols="12" md="auto">
           <b-media>
-            <icon name="circle-notch" scale="2" slot="aside" spin></icon>
+            <icon name="circle-notch" scale="2" v-slot:aside spin></icon>
             <h4 v-t="'Loading Network Data'"></h4>
             <p class="font-weight-light" v-t="'Please wait...'"></p>
           </b-media>

@@ -35,12 +35,12 @@
       >
         <b-media slot="noResult" class="text-secondary" md="auto">
           <template v-if="loading">
-            <icon name="circle-notch" spin scale="2" slot="aside" class="mt-1 ml-2"></icon>
+            <template v-slot:aside><icon name="circle-notch" spin scale="2" class="mt-1 ml-2"></icon></template>
             <strong>{{ $t('Loading results') }}</strong>
             <b-form-text class="font-weight-light">{{ $t('Please wait...') }}</b-form-text>
           </template>
           <template v-else>
-            <icon name="search" scale="2" slot="aside" class="mt-1 ml-2"></icon>
+            <template v-slot:aside><icon name="search" scale="2" class="mt-1 ml-2"></icon></template>
             <strong>{{ $t('No results') }}</strong>
             <b-form-text class="font-weight-light">{{ $t('Please refine your search.') }}</b-form-text>
           </template>
